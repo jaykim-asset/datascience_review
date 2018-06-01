@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>데이터 사이언스 스쿨</title>
+        <style media='screen'>
+
+            /* css selector */
+
+            /* 1. ID Selector */
+            /* 아이디를 셀렉할때는 #(아이디이름)으로 선택합니다.  */
+            /* 여러개를 셀렉할때는 ,로 구분해 넣어줍니다. */
+            /* #ds2, #ds3{
+                color: red;
+            } */
+
+            /* 2. Class Selector */
+            /* 클래스를 셀렉할때는 .(클래스 이름)으로 선택합니다. */
+            /* 엘리먼트를 묶어서 같은 css를 적용할 때 사용합니다. */
+            /* .ds1{
+                font-size: 24px;
+                color: blue;
+                margin: 5px 20px 10px 30px;
+                /* margin: 0 공간 띄움 없이 만들기 */
+            /* } */
+
+            /* 3. not Selector , ex) d2는 blue 제외함*/
+            /* .ds:not(.ds2){
+                color:blue;
+            } */
+
+            /* 4. first-child Selector */
+            /* .ds:first-child{
+                background-color:red
+            } */
+
+            /* 5. last-child Selector */
+            /* .ds:last-child{
+                background-color:red
+            } */
+
+            /* 6. nth-child: n번째 엘리먼트 셀렉트, 범위지정 기능은 없음 */
+            .ds:nth-child(4), .ds:nth-child(1){
+                background-color:yellow
+            }
+
+            /* 7. deepth, level로 엘리먼트 셀렉터 */
+            /* 공백문자로 하위 엘리먼트를 셀렉트 했을 때, 모든 하위 엘리먼트를 셀렉팅 합니다.*/
+            /* .contatn h1 > 1{
+                font-weight: lighter;
+            } */
+
+        body > p.ds.ds1{
+            color: green;
+        }
+
+        </style>
+    </head>
+    <body>
+
+    <!-- p#ds${dss$}*3 -->
+    <!-- <p id="ds1">dss1</p> -->
+    <!-- <p id="ds2">dss2</p> -->
+    <!-- <p id="ds3">dss3</p> -->
+
+    <!-- p.ds1{dss$}*2+p.ds2{dss$@3}*2 -->
+    <!-- <p class="ds1">dss1</p>
+    <p class="ds1">dss2</p>
+    <p class="ds2">dss3</p>
+    <p class="ds2">dss4</p> -->
+
+    <!-- p.ds.ds${ds$}*5 -->
+    <p class="ds ds1">ds1</p>
+    <p class="ds ds2">ds2</p>
+    <p class="ds ds3">ds3</p>
+    <p class="ds ds4">ds4</p>
+    <p class="ds ds5">ds5</p>
+
+    <!-- div.contants>h1{inner_1} div.text>^h1{inner_2} -->
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!-- CSS Selector -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Data Science Learner</title>
+        <style media='screen'>
+
+        /* 1. ID Selector */
+        /* #ds1{
+            font-size: 40px;
+            color: red;
+        } */
+
+        /* 2. Class Selector */
+        /* .ds{
+            font-size: 25px;
+            color: blue;
+        }*/
+
+        /* 3. not */
+        /* p:not(.ds2){
+            color: red;
+        } */
+
+        /* 4. first-child */
+        /* p:first-child{
+            color:orange;
+            font-size:100;
+        } */
+
+        /* 5. last-child */
+        /* p:last-child{
+            color:purple;
+        } */
+
+        /* 6. nth-child */
+        /* p:nth-child(1){
+            color: blue;
+            font-size: 25;
+        } */
+
+        /* 7. > */
+        /* .contants h1{}은 contants 클래스 안에 있는 모든 h1에 css를 적용 */
+        /* .contants h1{
+            color:red;
+        } */
+        /* .contants > h1{}은 contants클래스 바로 아래 lvl에 있는 h1에 css를 적용 */
+        .contants > h1{
+            color:purple;
+        }
+
+        </style>
+    </head>
+    <body>
+
+    <!-- <div id='ds1'>ID ds1</div> -->
+
+    <!-- <div class='ds'>Class ds 1</div>
+    <div class='ds'>Class ds 2</div> -->
+
+    <!-- <p class='ds1'>DS1</p>
+    <p class='ds2'>DS2</p> -->
+
+    <!-- <p class='ds123'>DS123</p>
+    <p class='ds213'>DS213</p>
+    <p class='ds321'>DS321</p> -->
+
+    <!-- <p class='ds123'>DS123</p>
+    <p class='ds213'>DS213</p>
+    <p class='ds321'>DS321</p> -->
+
+    <!-- <p class='ds123'>DS123</p>
+    <p class='ds213'>DS213</p>
+    <p class='ds321'>DS321</p> -->
+
+    <div class='contants'>
+        <div class='txt'>
+            <h1>inner_1</h1>
+        </div>
+        <h1>inner_2</h1>
+    </div>
+
+
+    </body>
+</html>
