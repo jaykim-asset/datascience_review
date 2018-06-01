@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+    <!-- 1.div : 레이아웃을 나타내는 엘리먼트  -->
+    <div style='height: 100px; background-color: red;'>dss1</div>
+        <p>dss0</p>
+        <p>dss1</p>
+    </body>
+
+    <!-- 2. table: 테이블 모양을 나타낼 때 사용하는 엘리먼트 -->
+    <!-- table>caption{테이블제목}+thead>tr>th{thead$}*2^^tbody>tr>th{tbody$}*2 -->
+    <table>
+        <caption>테이블제목</caption>
+        <thead>
+            <tr>
+                <th>thead1</th>
+                <th>thead2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>tbody1</th>
+                <th>tbody2</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 3. ul, li: 리스트 엘리먼트 -->
+
+    <!-- 4. a: 링크 엘리먼트 -->
+    <!-- href: 클랙 했을 때 이동되는 url 링크 -->
+    <a href='http://google.com' target='_blank'>google</a>
+    <!-- 5. img: 이미지 엘리먼트  -->
+    <img style='width: 200px;' src='http://cdn.www.fastcampus.co.kr/wp-content/uploads/2017/11/fastcampus_logo_positive-1.png' alt='패스트캠퍼스'></img>
+
+    <!-- 6. iframe: 아이프레임 엘리먼트 -->
+    <!-- 웹 페이지 안에 웹페이지를 보여주는 엘리먼트 입니다. -->
+    <br>
+    <iframe src="file:///C:/Users/JongJae/datascience_review/basic.html" width="400" height="400"></iframe>
+    <br>
+    <!-- 7. input(text, radio, password, checkbox) 입력 엘리먼트 -->
+    <input type="text" name="" value="" placeholder='email'><br>
+    <input type="password" name="" value="" placeholder='password'><br>
+    <!-- radio 버튼은 name 이름으로 그루핑 됩니다. -->
+    <input type="radio" name="radio1" value="">라디오1</input>
+    <input type="radio" name="radio1" value="">라디오1</input><br>
+    <input type="radio" name="radio2" value="">라디오2</input>
+    <input type="radio" name="radio2" value="">라디오2</input>
+    <input type="radio" name="radio2" value="">라디오2</input>
+
+    <input type="checkbox" name="radio1" value="">체크박스1</input>
+    <input type="checkbox" name="radio1" value="">체크박스2</input>
+
+    <!-- 8. 여러줄을 입력 받을 수 있는 엘리먼트  -->
+    <textarea name="name" rows="8" cols="80" style='resize:none'></textarea>
+    <br>
+    <!-- 9. select, option: 여러가지 옵션을 선택할 수 있는 엘리먼트  -->
+    <!-- <select>option[value=$]{option $}*3 -->
+    <select name="" id="">
+        <option value="1">option 1</option>
+        <option value="2">option 2</option>
+        <option value="3">option 3</option>
+    </select>
+
+    <!-- 10. button: 버튼을 나타내는 엘리먼트 -->
+    <button type='button' name='button' onclick="javascript:(alert('hello'))">Click</button>
+
+</html>
